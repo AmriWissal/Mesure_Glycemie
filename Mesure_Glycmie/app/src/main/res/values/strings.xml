@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Mesure_Glycémie</string>
+    <string name="title">Mesure de niveau de glycémie</string>
+    <string name="ageMsg">Votre age</string>
+    <string name="question">Est-ce que vous jeûnez?\n</string>
 </resources>
+
