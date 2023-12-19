@@ -11,12 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mesure_Glycémie"
-        tools:targetApi="31">
+        tools:targetApi="34">
         <activity
-            android:name=".vue.ConsultActivity"
+            android:name=".Vue.ConsultActivity"
             android:exported="false" />
         <activity
-            android:name=".vue.HomeActivity"
+            android:name=".Vue.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".vue.MainActivity"
+            android:name=".Vue.MainActivity"
             android:exported="false" />
 
         <meta-data

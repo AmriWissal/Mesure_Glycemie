@@ -1,7 +1,7 @@
-package Controller;
+package com.example.mesure_glycmie.Controller;
 
 import android.content.Context;
-import Model.User;
+import com.example.mesure_glycmie.Model.User ;
 import android.content.SharedPreferences;
 
 

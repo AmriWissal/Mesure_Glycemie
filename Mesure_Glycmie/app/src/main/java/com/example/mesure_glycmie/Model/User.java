@@ -1,4 +1,4 @@
-package Model;
+package com.example.mesure_glycmie.Model;
 
 public class User {
 

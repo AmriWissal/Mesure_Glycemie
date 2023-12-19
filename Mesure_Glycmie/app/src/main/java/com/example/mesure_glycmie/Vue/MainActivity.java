@@ -1,5 +1,7 @@
-package Vue;
+package com.example.mesure_glycmie.Vue;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,14 +12,16 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mesure_glycmie.R;
 
-import Controller.Controller;
+import com.example.mesure_glycmie.Controller.Controller;
 
 public class MainActivity extends AppCompatActivity
     {
+        private static final int CODE = 1;
         private EditText etValeur;
         private Button bConsulter;
         private TextView tvAge,tvRésultat;
@@ -74,11 +78,26 @@ public class MainActivity extends AppCompatActivity
                         //userAction:view---->Controller
                         controller.createPatient(age,valeurMesurer,fasting);
                         //Update Controller----->View
-                        tvRésultat.setText(controller.getResult());
+                        String Reponse= controller.getResult();
+
+                        Intent intent = new Intent(MainActivity.this, ConsultActivity.class);
+                        intent.putExtra("reponse", Reponse);
+                        startActivityForResult(intent,CODE);
                     }
                 }
             }
             );
+        }
+        @Override
+        protected void onActivityResult(int requestCode, int resultCode, @Nullable  Intent data) {
+            MainActivity.super.onActivityResult(requestCode, resultCode, data);
+
+            if (requestCode == CODE) {
+                if (resultCode == Activity.RESULT_CANCELED) {
+                    // Afficher un <link>Toast</link> d'erreur
+                    Toast.makeText(MainActivity.this, "Opération annulée", Toast.LENGTH_SHORT).show();
+                }
+            }
         }
         private void init()
         {

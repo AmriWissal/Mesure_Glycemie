@@ -1,4 +1,4 @@
-package Vue;
+package com.example.mesure_glycmie.Vue;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;

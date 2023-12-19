@@ -1,4 +1,4 @@
-package Vue;
+package com.example.mesure_glycmie.Vue;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import Controller.LoginController;
+import com.example.mesure_glycmie.Controller.LoginController;
 
 public class HomeActivity extends AppCompatActivity
     {
