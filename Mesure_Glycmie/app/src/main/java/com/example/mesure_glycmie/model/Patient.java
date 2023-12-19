@@ -1,4 +1,4 @@
-package Model;
+package com.example.mesure_glycmie.model;
 
 public class Patient {private int age;
     private float Vmesurer;

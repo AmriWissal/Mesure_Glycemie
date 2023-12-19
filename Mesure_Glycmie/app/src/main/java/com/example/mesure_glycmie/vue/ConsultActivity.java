@@ -1,12 +1,14 @@
-package Vue;
+package com.example.mesure_glycmie.vue;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import com.example.mesure_glycmie.R;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.mesure_glycmie.R;
 
 
 public class ConsultActivity extends AppCompatActivity {
@@ -26,7 +28,7 @@ public class ConsultActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    Intent intent = new Intent();
+                    Intent intent = new Intent(ConsultActivity.this, MainActivity.class);
                     if(reponse!=null)
                         setResult(RESULT_OK,intent);
                     else

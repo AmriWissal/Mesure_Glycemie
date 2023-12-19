@@ -1,8 +1,9 @@
-package Controller;
+package com.example.mesure_glycmie.controller;
 
 import android.content.Context;
-import Model.User;
 import android.content.SharedPreferences;
+
+import com.example.mesure_glycmie.model.User ;
 
 
 public class LoginController {

@@ -1,6 +1,6 @@
-package Controller;
+package com.example.mesure_glycmie.controller;
 
-import Model.Patient;
+import com.example.mesure_glycmie.model.Patient ;
 
 public class Controller {
 

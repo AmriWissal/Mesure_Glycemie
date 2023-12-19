@@ -1,5 +1,6 @@
-package Vue;
+package com.example.mesure_glycmie.vue;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mesure_glycmie.R;
 
-import Controller.Controller;
+import com.example.mesure_glycmie.controller.Controller ;
 
 public class MainActivity extends AppCompatActivity
     {
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity
                         controller.createPatient(age,valeurMesurer,fasting);
                         //Update Controller----->View
                         tvRésultat.setText(controller.getResult());
+
                     }
                 }
             }
