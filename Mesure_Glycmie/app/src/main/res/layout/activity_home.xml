@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/home_background"
-    tools:context=".vue.HomeAtivity">
+    tools:context=".Vue.HomeActivity">
 
     <EditText android:id="@+id/etUserName"
         android:layout_width="match_parent"

@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity
         private static final int CODE = 1;
         private EditText etValeur;
         private Button bConsulter;
-        private TextView tvAge,tvRésultat;
+        private TextView tvAge;
         private RadioButton rbOui,rbNon;
         private SeekBar sbAge;
         private Controller controller=new Controller();
@@ -106,7 +106,6 @@ public class MainActivity extends AppCompatActivity
             tvAge=(TextView) findViewById(R.id.votreAge);
             rbOui=(RadioButton) findViewById(R.id.rbtOui);
             rbNon=(RadioButton) findViewById(R.id.rbtNon);
-            tvRésultat=(TextView) findViewById(R.id.res);
             bConsulter=(Button) findViewById(R.id.btn);
         }
 
